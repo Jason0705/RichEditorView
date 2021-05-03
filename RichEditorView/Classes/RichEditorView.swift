@@ -128,12 +128,14 @@ private let DefaultInnerLineHeight: Int = 21
     
     public override init(frame: CGRect) {
         webView = RichEditorWebView()
+        webView.keyboardDisplayRequiresUserAction = false
         super.init(frame: frame)
         setup()
     }
     
     required public init?(coder aDecoder: NSCoder) {
         webView = RichEditorWebView()
+        webView.keyboardDisplayRequiresUserAction = false
         super.init(coder: aDecoder)
         setup()
     }
