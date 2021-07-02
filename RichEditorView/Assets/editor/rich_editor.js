@@ -102,7 +102,7 @@ RE.setHtml = function(contents) {
         images[i].onload = RE.updateHeight;
     }
 
-    RE.editor.innerHTML = tempWrapper.innerHTML;
+    RE.editor.innerHTML = tempWrapper.outerHTML;
     RE.updatePlaceholder();
 };
 
